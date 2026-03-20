@@ -1,0 +1,23 @@
+[
+  {
+    "id": "new-team-member",
+    "title": "Нові люди",
+    "date": "2026-03-16",
+    "readingTime": 1,
+    "htmlContent": "<h2>Нова людина в команді == нові сервіси</h2>\n<p>На днях до нас у команду доєднався свіжий архітектор.</p>\n<p><em>Він не «новий» бо вже був на проєкті, але «свіжий» бо перейшов у нашу команду з якогось доволі не дуже цікавого напрямку. А наш попередній звільнився ;-)</em></p>\n<p>І він почав все роздивлятись, як у нас що лежить, куди ходить, де це все можна побачити і поклацати.</p>\n<p>Через декілька днів прилітає зустріч з описом: <strong>«Integration of new ….”</strong></p>\n<h3>Презентували нам такий сервіс - <a href=\"https://temporal.io\">https://temporal.io</a></h3>\n<p>Задача проста - віддати контроль стану, падінь, помилок та побудови процесу обробки інформації на незалежний ресурс. Якому байдуже що пережовувати.</p>\n<p>Написаний на go - буде швидко, але виконувати прийдеться всеодно код пітона, тому тут ми не сильно виграємо.</p>\n<p>Спілкування по http2(rpc) - канонічне для go.</p>\n<p>Self hosted само собою.</p>\n<p>Перевага такого сервісу - код буде лежати в різних сервісах, але з-за допомогою темпорал його можна зібрати в цілий пацалайн.</p>\n<p>Можливо комусь пригодиться.</p>\n<p>🙌</p>\n",
+    "tags": [
+      "people",
+      "temporal"
+    ]
+  },
+  {
+    "id": "hello-world",
+    "title": "Hello, World — My First Post",
+    "date": "2026-03-01",
+    "readingTime": 1,
+    "htmlContent": "<p>Welcome to my blog. This is the first post, and it exists mostly to prove that the plumbing works.</p>\n<p>Posts are written in Markdown and stored as <code>.md</code> files in the <code>/posts</code> directory of this repository. A small Node.js script (in <code>/scripts/build-posts.js</code>) converts them to HTML and bundles them into a single <code>posts.json</code> file. A GitHub Actions workflow runs that script on every push to <code>main</code>, then deploys the built site to GitHub Pages.</p>\n<h2>How to add a post</h2>\n<p>Create a new file in <code>/posts/</code> with this frontmatter:</p>\n<pre><code>---\nid: my-post-slug\ntitle: My Post Title\ndate: 2025-03-15\n---\n\nYour content here.\n</code></pre>\n<p>Push it to <code>main</code>. The workflow takes care of the rest. The post will be live at <code>/post/my-post-slug</code>.</p>\n<h2>Why no CMS?</h2>\n<p>I wanted the simplest possible setup. No database, no API keys to rotate, no backend to maintain. Just a Git repo, some Markdown, and a build step. If something goes wrong, I can trace it in the GitHub Actions logs and fix it in a text editor.</p>\n<p>That&#39;s all for now. More soon.</p>\n",
+    "tags": [
+      "init"
+    ]
+  }
+]
