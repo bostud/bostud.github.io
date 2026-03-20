@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "words",
+    "about": "about"
+  },
+  "home": {
+    "heading": "Writing",
+    "subtitle": "Thoughts on code, design, and things I find interesting.",
+    "noPosts": "No posts yet.",
+    "loadError": "Could not load posts. Make sure {{file}} exists.",
+    "minRead": "{{count}} min read"
+  },
+  "post": {
+    "backLink": "All posts",
+    "loadError": "Failed to load posts.",
+    "notFound": "Post not found.",
+    "returnHome": "Return home",
+    "minRead": "{{count}} min read"
+  },
+  "about": {
+    "name": "Your Name",
+    "bio1": "I write about software engineering, product design, and whatever else occupies my mind. Currently building things at",
+    "company": "Company",
+    "bio2": "Previously worked on distributed systems, developer tooling, and the occasional side project that never ships.",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "authorName": "Bohdan Studenets",
+    "authorDescription":
+        "I have been working in IT for more than 8 years. I started my career as data analyst: in the first company it was based on Excel and VBA, in the second: Excel, Python and MySQL. Then I started scraping data and found my first job as a python dev. The phrase that always motivates me: If you can read — you can learn.",
+    "authorBio": "I write about software engineering, product design, and whatever else occupies my mind. Currently building things at"
+  },
+  "notFound": {
+    "label": "404",
+    "heading": "Page not found",
+    "message": "The page <0>{{path}}</0> doesn't exist.",
+    "backHome": "← Back home"
+  },
+  "footer": {
+    "builtWith": "built with"
+  }
+}

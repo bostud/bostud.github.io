@@ -1,0 +1,46 @@
+name: Build & Deploy Blog
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install script dependencies
+        run: npm install --no-save marked gray-matter
+
+      - name: Build posts.json from /posts/*.md
+        run: node scripts/build-posts.js
+
+      - name: Build site with Vite
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      # Deploy the built /dist folder to the gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # Ensures React Router works on GitHub Pages — copies index.html to 404.html
+          keep_files: false
+          force_orphan: true
