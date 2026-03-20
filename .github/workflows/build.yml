@@ -40,7 +40,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist
           # Ensures React Router works on GitHub Pages — copies index.html to 404.html
           keep_files: false
           force_orphan: true
