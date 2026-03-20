@@ -20,7 +20,7 @@ export default function PostDetail() {
       })
     : "";
 
-  const tags = post?.tags.map((tag) => `#${tag}`).join(" ") || "";
+  const tags = post && post.tags ? post.tags.map((tag) => `#${tag}`).join(" ") || "" : "";
 
   return (
     <div className="min-h-screen bg-background">
@@ -90,7 +90,7 @@ export default function PostDetail() {
                   <span>{t("post.minRead", { count: post.readingTime })}</span>
                 </>
               )}
-              {post.tags.length > 0 && (
+              {tags && (
                 <>
                   <span>·</span>
                   <span>{tags}</span>
