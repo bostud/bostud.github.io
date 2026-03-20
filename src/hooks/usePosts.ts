@@ -6,6 +6,7 @@ export interface Post {
   date: string;
   readingTime?: number;
   htmlContent?: string;
+  tags? : string[];
 }
 
 interface UsePostsResult {

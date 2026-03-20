@@ -49,6 +49,7 @@ async function main() {
         date: data.date,
         readingTime,
         htmlContent,
+        tags: data.tags ? data.tags.split(" ") : [],
       };
     })
   );

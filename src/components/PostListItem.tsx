@@ -13,6 +13,8 @@ export default function PostListItem({ post }: Props) {
     day: "numeric",
   });
 
+  const tags = post.tags.map((tag) => `#${tag}`).join(" ");
+
   return (
     <li className="group">
       <Link
@@ -26,6 +28,9 @@ export default function PostListItem({ post }: Props) {
           {date}
         </span>
       </Link>
+      <span className="font-mono text-xs text-muted-foreground shrink-0">
+        {tags}
+      </span>
     </li>
   );
 }

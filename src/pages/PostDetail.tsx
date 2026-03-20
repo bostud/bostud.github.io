@@ -20,6 +20,8 @@ export default function PostDetail() {
       })
     : "";
 
+  const tags = post?.tags.map((tag) => `#${tag}`).join(" ") || "";
+
   return (
     <div className="min-h-screen bg-background">
       <Nav />
@@ -86,6 +88,12 @@ export default function PostDetail() {
                 <>
                   <span>·</span>
                   <span>{t("post.minRead", { count: post.readingTime })}</span>
+                </>
+              )}
+              {post.tags.length > 0 && (
+                <>
+                  <span>·</span>
+                  <span>{tags}</span>
                 </>
               )}
             </div>

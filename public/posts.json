@@ -1,16 +1,23 @@
 [
   {
-    "id": "on-writing-clearly",
-    "title": "On Writing Clearly",
-    "date": "2025-03-14",
+    "id": "new-team-member",
+    "title": "Нові люди",
+    "date": "2026-03-16",
     "readingTime": 1,
-    "htmlContent": "<p>The best technical writing I&#39;ve read has one thing in common: it treats the reader&#39;s time as more valuable than the writer&#39;s effort. Every sentence earns its place, or it doesn&#39;t appear.</p>\n<p>That sounds obvious. In practice it&#39;s hard, because writing is also thinking. The first draft is where you discover what you believe. The second draft is where you decide what to keep.</p>\n<h2>Clarity is a structural problem</h2>\n<p>Most unclear writing isn&#39;t unclear at the sentence level. It&#39;s unclear because the ideas aren&#39;t in the right order. The reader meets a concept before they have the context to understand why it matters.</p>\n<p>The fix is almost always to restructure, not to reword. Move the explanation closer to the thing being explained. Introduce terms before you use them. Put the conclusion at the top, not the bottom — especially in technical documentation where readers are scanning.</p>\n<h2>Specificity beats emphasis</h2>\n<p>When writers want to stress something important, they reach for emphasis: <em>really important</em>, <strong>critical note</strong>, warning blocks. These work once. Used repeatedly, they train the reader to ignore them.</p>\n<p>A better approach: be specific. Instead of <em>this is very slow</em>, write <em>this adds 200ms to every request</em>. The reader understands the stakes without being told how to feel about them.</p>\n<h2>Read it out loud</h2>\n<p>The simplest editing technique I know: read the draft aloud. Sentences that sound awkward usually are. Long, tangled constructions become obvious when you have to breathe through them. If you stumble, the reader will too.</p>\n<p>Most writing benefits from being shorter. Cut the last paragraph first — it&#39;s often a restatement of what you already said.</p>\n"
+    "htmlContent": "<h2>Нова людина в команді == нові сервіси</h2>\n<p>На днях до нас у команду доєднався свіжий архітектор.</p>\n<p><em>Він не «новий» бо вже був на проєкті, але «свіжий» бо перейшов у нашу команду з якогось доволі не дуже цікавого напрямку. А наш попередній звільнився ;-)</em></p>\n<p>І він почав все роздивлятись, як у нас що лежить, куди ходить, де це все можна побачити і поклацати.</p>\n<p>Через декілька днів прилітає зустріч з описом: <strong>«Integration of new ….”</strong></p>\n<h3>Презентували нам такий сервіс - <a href=\"https://temporal.io\">https://temporal.io</a></h3>\n<p>Задача проста - віддати контроль стану, падінь, помилок та побудови процесу обробки інформації на незалежний ресурс. Якому байдуже що пережовувати.</p>\n<p>Написаний на go - буде швидко, але виконувати прийдеться всеодно код пітона, тому тут ми не сильно виграємо.</p>\n<p>Спілкування по http2(rpc) - канонічне для go.</p>\n<p>Self hosted само собою.</p>\n<p>Перевага такого сервісу - код буде лежати в різних сервісах, але з-за допомогою темпорал його можна зібрати в цілий пацалайн.</p>\n<p>Можливо комусь пригодиться.</p>\n<p>🙌</p>\n",
+    "tags": [
+      "people",
+      "temporal"
+    ]
   },
   {
     "id": "hello-world",
     "title": "Hello, World — My First Post",
-    "date": "2025-03-10",
+    "date": "2026-03-01",
     "readingTime": 1,
-    "htmlContent": "<p>Welcome to my blog. This is the first post, and it exists mostly to prove that the plumbing works.</p>\n<p>Posts are written in Markdown and stored as <code>.md</code> files in the <code>/posts</code> directory of this repository. A small Node.js script (in <code>/scripts/build-posts.js</code>) converts them to HTML and bundles them into a single <code>posts.json</code> file. A GitHub Actions workflow runs that script on every push to <code>main</code>, then deploys the built site to GitHub Pages.</p>\n<h2>How to add a post</h2>\n<p>Create a new file in <code>/posts/</code> with this frontmatter:</p>\n<pre><code>---\nid: my-post-slug\ntitle: My Post Title\ndate: 2025-03-15\n---\n\nYour content here.\n</code></pre>\n<p>Push it to <code>main</code>. The workflow takes care of the rest. The post will be live at <code>/post/my-post-slug</code>.</p>\n<h2>Why no CMS?</h2>\n<p>I wanted the simplest possible setup. No database, no API keys to rotate, no backend to maintain. Just a Git repo, some Markdown, and a build step. If something goes wrong, I can trace it in the GitHub Actions logs and fix it in a text editor.</p>\n<p>That&#39;s all for now. More soon.</p>\n"
+    "htmlContent": "<p>Welcome to my blog. This is the first post, and it exists mostly to prove that the plumbing works.</p>\n<p>Posts are written in Markdown and stored as <code>.md</code> files in the <code>/posts</code> directory of this repository. A small Node.js script (in <code>/scripts/build-posts.js</code>) converts them to HTML and bundles them into a single <code>posts.json</code> file. A GitHub Actions workflow runs that script on every push to <code>main</code>, then deploys the built site to GitHub Pages.</p>\n<h2>How to add a post</h2>\n<p>Create a new file in <code>/posts/</code> with this frontmatter:</p>\n<pre><code>---\nid: my-post-slug\ntitle: My Post Title\ndate: 2025-03-15\n---\n\nYour content here.\n</code></pre>\n<p>Push it to <code>main</code>. The workflow takes care of the rest. The post will be live at <code>/post/my-post-slug</code>.</p>\n<h2>Why no CMS?</h2>\n<p>I wanted the simplest possible setup. No database, no API keys to rotate, no backend to maintain. Just a Git repo, some Markdown, and a build step. If something goes wrong, I can trace it in the GitHub Actions logs and fix it in a text editor.</p>\n<p>That&#39;s all for now. More soon.</p>\n",
+    "tags": [
+      "init"
+    ]
   }
 ]

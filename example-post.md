@@ -1,8 +1,7 @@
 ---
 id: hello-world
 title: "Hello, World — My First Post"
-date: "2026-03-01"
-tags: init
+date: "2025-03-10"
 ---
 
 Welcome to my blog. This is the first post, and it exists mostly to prove that the plumbing works.
