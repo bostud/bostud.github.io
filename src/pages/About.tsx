@@ -64,7 +64,7 @@ export default function About() {
           <div className="mb-8">
             <div className="w-48 h-48 rounded-full bg-muted border border-border overflow-hidden">
               <img
-                src="./public/profile-pic.jpg"
+                src="/profile-pic.jpg"
                 alt="Avatar"
                 className="w-full h-full object-cover"
               />
